@@ -1,0 +1,13 @@
+{
+  "name": "sheet-notify",
+  "version": "1.0.0",
+  "description": "Watch a SheetDB sheet for new rows and send a Telegram notification",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}
