@@ -84,6 +84,9 @@ async function main() {
   }
 
   for (const text of chunks) {
+    console.log("MSG_SENT_START");
+    console.log(text);
+    console.log("MSG_SENT_END");
     await sendMessage(text);
   }
 
