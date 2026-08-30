@@ -1,3 +1,4 @@
+# Sheet notifier - runs every 10 minutes
 name: Sheet Notify
 
 on:
