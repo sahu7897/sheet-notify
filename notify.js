@@ -54,7 +54,7 @@ function fmt(row) {
 function chunkify(items) {
   const chunks = [];
   for (let i = 0; i < items.length; i += 10) {
-    chunks.push(items.slice(i, i + 10).join("\n────────────\n"));
+    chunks.push(items.slice(i, i + 10).map(fmt).join("\n────────────\n"));
   }
   return chunks;
 }
@@ -84,9 +84,6 @@ async function main() {
   }
 
   for (const text of chunks) {
-    console.log("MSG_SENT_START");
-    console.log(text);
-    console.log("MSG_SENT_END");
     await sendMessage(text);
   }
 
